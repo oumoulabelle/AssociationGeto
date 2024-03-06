@@ -1,0 +1,49 @@
+/* Styles pour la table */
+.table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  /* Styles pour les cellules de la table */
+  .table th,
+  .table td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ccc;
+  }
+  
+  /* Style pour l'en-tête de la table */
+  .table thead {
+    background-color: #f2f2f2;
+  }
+  
+  /* Style pour les lignes impaires du corps de la table */
+  .table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Style pour les liens dans la dernière colonne */
+  .table td a {
+    display: inline-block;
+    padding: 4px;
+  }
+  
+  /* Style pour les boutons */
+  button {
+    margin-top: 20px;
+  }
+  button a {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    background-color: #f2f2f2;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button a:hover {
+    background-color: #ccc;
+  }
+    

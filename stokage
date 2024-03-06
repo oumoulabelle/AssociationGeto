@@ -1,0 +1,332 @@
+<select name="choix">
+                        <option value="choix1">Francais</option>
+                        <option value="choix2">Anglais</option>
+                        <option value="choix3">Allemand</option>
+                        <option value="choix4">Espagnol</option>
+                    </select><br><br><br>
+
+
+
+
+
+                    <input type="checkbox" name="case" id="case" /> <br><label for="case">Liberté</label><br><br>
+                    <input type="checkbox" name="case" id="case" /> <br><label for="case">Musique</label><br><br>
+                    <input type="checkbox" name="case" id="case" /> <br><label for="case">Offrire son aide</label><br><br>
+                    <input type="checkbox" name="case" id="case" /> <br><label for="case">Dance</label><br><br>
+                    <input type="checkbox" name="case" id="case" /> <br><label for="case">lire</label><br><br>
+                    <input type="checkbox" name="case" id="case" /> <br><label for="case">Autre</label><br><br>
+
+
+
+
+
+
+                    <select name="choix">
+                        <option value="choix1">Elève</option>
+                        <option value="choix2">Fonctionnaire</option>
+                        <option value="choix4">Salarié du secteur privé</option>
+                        <option value="choix4">Salarié des Nations Unies</option>
+                        <option value="choix4">Salarié d'une organisation civile</option>
+                        <option value="choix4">Salarié du secteur public</option>
+                        <option value="choix4">Retraité</option>
+                        <option value="choix4">Sans emplois</option>
+                        <option value="choix4">Travail à mon compte</option>
+                        </select><br><br>
+
+
+
+
+
+                        <select name="choix">
+                            <option value="choix1">Togolais(e)</option>
+                            <option value="choix2">Ivoirien(e)</option>
+                            <option value="choix4">Nigériant(e)</option>
+                            <option value="choix4">Nigérien(e)</option>
+                            <option value="choix4">Ghanéen(e)</option>
+                            <option value="choix4">Béninoise(e)</option>
+                            <option value="choix4">Ethiopien(e)</option>
+                            <option value="choix4">Malien(e)</option>
+                            <option value="choix4">sénegalais(e)</option>
+                            <option value="choix4">Gabonais(e)</option>
+                            <option value="choix4">Autre
+                             </option>
+
+                             👈👉 👆 🖕 👇
+
+
+
+
+                             <select name="choix">
+                                <option value="choix1">Gestion des crises et opération de secours d'urgence</option>
+                                <option value="choix2">Démocratisation, élection et gouvenance</option>
+                                <option value="choix4">Sécurité et service de protection</option>
+                                <option value="choix4">Logistique, stocks et autres services d'entretien et de gestion des locaus</option>
+                                <option value="choix4">Transport</option>
+                                <option value="choix4">Energie, environnement et gestion durable des ressources naturelles</option>
+                                <option value="choix4">Agriculture et industrie agro-alimentaire</option>
+                                <option value="choix4">Sécurité des produits, assurance qualité et analyse en laboratoire</option>
+                                <option value="choix4">Ingéniérie, industrie,construction et artisanat</option>
+                                <option value="choix4">Affaires juridiques</option>
+                                <option value="choix4">Gestion commerciales, marketing et tourisme</option>
+
+
+                                <option value="choix4">Gestion commerciales, marketing et tourisme</option>
+                                <option value="choix4">Sécurité des produits, assurance qualité et analyse en laboratoire</option>
+                                <option value="choix4">Gestion commerciales, marketing et tourisme</option>
+                                <option value="choix4">Gestion commerciales, marketing et tourisme</option>
+                                <option value="choix4">Autre</option>
+                                </select><br><br><br>
+
+
+
+                                <?php
+try
+{
+$pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
+$bdd = new PDO('mysql:host=localhost;dbname=benevolat', 'root', '',
+$pdo_options);
+$reponse = $bdd->query('SELECT * FROM diplome');
+while ($donnees = $reponse->fetch())
+{
+    echo $donnees['typed']."<br>"; 
+    
+}
+$reponse->closeCursor(); 
+
+}
+catch (Exception $e)
+{
+die('Erreur : ' . $e->getMessage());
+
+}
+
+
+
+?>
+
+
+
+
+    
+display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100pv;
+  flex-direction: column;
+  gap: 100pv;
+
+  *{
+    margin: 0PX;
+    padding: 0px;
+}
+
+
+
+
+body{
+  background-color: rgb(151, 156, 163);  
+ 
+}
+
+p{
+    font-size: 50px;
+    padding-left: 350PX;
+   padding-top: 40PX;
+}
+label{
+    font-size: 23px;
+    
+}
+.val{
+    width: 200px;
+    height: 50px;
+    margin-left: 700px;
+   margin-bottom: 200PX;
+   margin-top: 20PX;
+   font-size: 20px;
+}
+.ent{
+    font-size: 30px;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 50px;
+    min-height: 400px;
+    margin-right: 40px;
+    font-size: 24px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    columns: #fff;
+    padding: 5px 30px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+    color: #000;
+}
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+} 
+.logo img{
+    float: left;
+    width: 100px;
+    height: auto;
+    height: 80px;
+    padding-top: 50px;
+   margin-top: -0,99999px;
+   margin-left: 120px;
+   margin-bottom: 50PX;
+   padding-right: 30PX;
+
+  
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+.btn{
+    border-radius: 5px;
+    height: 50px;
+    width: 150px;
+    margin-left: 700px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: black;
+}
+.rel{
+    color: #000;
+    width: 200px;
+    height: 30px;
+    margin-left: 550px;
+    margin-top: 100px;
+    background-color: azure;
+ 
+
+}
+
+input:valid span,
+input:focus span,
+input{
+    background-color: rgb(151, 156, 163);   
+    border: 1px solid white ;
+    outline: none ;
+    width: 400px;
+    height: 30px;
+    font-size: 1em;
+    border-radius: 5px;
+    left: 0;
+   
+    text-transform: uppercase;
+    position: absolute;
+   
+    transition: 0.5s;
+    letter-spacing: 0.2em;
+    padding-left: 10PX;
+
+}
+select{
+    background-color: rgb(232, 235, 240);  
+    border: 1px solid white ;
+    outline: none ;
+    width: 420px;
+    height: 30px;
+    font-size: 1em;
+    border-radius: 5px;
+    left: 0;
+   
+    text-transform: uppercase;
+    position: absolute;
+    transform: translateX(10px) translateY(-7px);
+    transition: 0.5s;
+    letter-spacing: 0.1em;
+    padding-left: 10PX;
+}
+form{
+    padding-top: 100px;
+    padding-left: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+require("co.php");
+
+if (isset($_POST['valider'])) {
+    if (isset($_POST['nomb'])) {
+        $nomb = $_POST['nomb'];
+
+        // Requête pour vérifier si le domaine existe dans la table benevolats
+        $sql = "SELECT * FROM benevolats WHERE nomb = '$nomb'";
+        $resultat = mysqli_query($connexion, $sql);
+
+        if (!$resultat) {
+            die("Erreur de requête : " . mysqli_error($connexion));
+        }
+
+        if (mysqli_num_rows($resultat) > 0) {
+            echo "Bienvenue dans le domaine : " . $nomb;
+        } else {
+            echo "Le domaine n'existe pas dans la table benevolats.";
+        }
+    } else {
+        echo "Le champ du domaine n'a pas été saisi.";
+    }
+
+    $pseudo = isset($_POST['pseudo']) ? $_POST['pseudo'] : '';
+
+    if (!empty($pseudo)) {
+        // Requête pour vérifier si le pseudo existe dans la table inscription
+        $sql = "SELECT * FROM inscription WHERE pseudo = '$pseudo'";
+        $resultat = mysqli_query($connexion, $sql);
+
+        if (!$resultat) {
+            die("Erreur de requête : " . mysqli_error($connexion));
+        }
+
+        if (mysqli_num_rows($resultat) > 0) {
+            echo "  " . $pseudo;
+        } else {
+            echo "Vous n'existez pas dans notre Base";
+        }
+    } else {
+        echo "Votre pseudo est vide.";
+    }
+}
+
+mysqli_close($connexion);
+?>
+
+

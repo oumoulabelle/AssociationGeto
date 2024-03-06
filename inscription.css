@@ -1,0 +1,140 @@
+.conteneur{
+    border: 1px solid black;
+    font-size: 30PX;
+   margin-right: 1000PX;
+   padding-bottom: 1PX;
+   margin-left: -200PX;
+   box-shadow: 0 0 50px rgba(8, 7, 7, 0.5);
+   transition: box-shadow 0.3s ease-out;
+   border-radius: 20px;
+   padding-left: 15PX;
+   background-image: url(IMG/im4.jpg);
+   
+  
+}
+.contenir{
+    border: 1px solid black;
+    font-size: 30PX;
+    margin-top: -320PX;
+    margin-left: 500px;
+    margin-right: 100px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(8, 7, 7, 0.5);
+    transition: box-shadow 0.3s ease-out;
+    padding-left: 15PX;
+    background-image: url(IMG/im4.jpg);
+    padding-top: 80px;
+   
+    
+   }
+   .soumettre {
+    display: inline-block;
+    background-color: #3b80e9;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left:200px;
+  }
+  
+  .soumettre:hover {
+    background-color: #f8fcf8;
+  }
+  
+  .ref {
+    color: white;
+    text-decoration: none;
+  }
+  
+   .ref{
+    text-decoration: none;
+    color: #000;
+   }
+   
+   .titre{
+    font-size: 50px;
+    margin-left: -1px;
+    padding-bottom: 100px;
+    padding-top: 100PX;
+    padding-left: 400PX;
+   }
+   
+  
+    
+   
+   section{
+    padding-left: 200px;
+   margin-bottom: 100px;
+   padding-top: -200px;
+   }
+   body{
+      background-image: url(IMG/im1.jpg);
+      background-repeat: no-repeat;
+      height: 1000px;
+    
+     
+   }
+   ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 20px;
+    min-height: 400px;
+    margin-right: 40px;
+    font-size: 24px;
+    padding-top: -100px;
+   
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    columns: #fff;
+    padding: 5px 30px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+    color: #000;
+}
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+} 
+
+
+h2{
+    font-size: 26px;
+    
+}
+h4{
+    font-size: 20px;
+}
+hr{
+    padding-left: 1000px;
+}
+.Voir {
+    display: inline-block;
+    background-color: #f3f4f7;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left:200px;
+  }
+  
+  .Voir:hover {
+    background-color: #5478f1;
+  }

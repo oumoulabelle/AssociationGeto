@@ -1,0 +1,52 @@
+.form{
+    border: 1px solid black;
+    padding-bottom: 100PX;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-left: 100px;
+    margin-left: 300px;
+    margin-right: 500PX ;
+}
+input{
+    width: 500px;
+    height: 40px;
+    font-size: 20px;
+}
+label{
+    font-size: 20px;
+}
+select{
+    width: 400px;
+    height: 30px;
+    width: 500px;
+    height: 40px;
+    font-size: 20px;
+}
+body{
+    background-image: url(IMG/im1.jpg);
+}
+button{
+    width: 200px;
+    height: 30px; 
+    margin-left: 400PX;
+    border: 1px solid black;
+    font-size: 20px;
+    
+}
+.val{
+    width: 200px;
+    height: 50px;
+    margin-left: 700px;
+   margin-bottom: 200PX;
+   margin-top: 20PX;
+   font-size: 20px;
+}
+p{
+    font-size: 50px;
+    padding-left: 350PX;
+}
+input .radio{
+    width: 500px;
+    height: 40px;
+    font-size: 20px;
+}

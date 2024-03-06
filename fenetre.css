@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(img/im1.jpg);
+    
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+    
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 50px;
+    min-height: 400px;
+    margin-right: 40px;
+    font-size: 24px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    columns: #fff;
+    padding: 5px 30px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+    color: #000;
+}
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+ul li.active a{
+    background-color: #080808;
+    color: #fffdfd;
+}
+form{
+     
+    margin-top: 200px;
+    padding-left: 300px;
+    border: 1px solid black;
+    margin-left: 200px;
+    margin-right: 400px;
+    border-radius: 10px;
+    
+}
+input{
+    width: 400px;
+    height: 40px;
+    padding-left: 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    position: absolute;
+    transition: 0.5s;
+    letter-spacing: 0.2em;
+    background: none;
+   
+    
+
+}
+select{
+    background: none;  
+    border: 1px solid white ;
+    
+    width: 420px;
+    height: 30px;
+    font-size: 1em;
+    border-radius: 5px;
+    
+    
+   
+    text-transform: uppercase;
+    position: absolute;
+   
+    transition: 0.5s;
+    letter-spacing: 0.1em;
+    padding-left: 10PX;
+}
+.rel{
+    width: 400px;
+    height: 40px;
+    background-color: darkcyan;
+}
+    
+    
